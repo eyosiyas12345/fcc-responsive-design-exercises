@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content= "width=device-width, initial-scale=1.0">
+    <title>CatPhotoApp</title>
+  </head>
+  <style>
+    img{
+      width:300px;
+    }
+  </style>
+<body>
+    <h1>CatPhotoApp</h1>
+    <section>
+      <h2>Cat Photos</h2>
+      <p>
+        Everyone loves 
+        <a href="#">cute cats</a> in our gallery.
+      </p>
+      <p>See more <a href="">Cat photos</a> in our gallery</p>
+      <img src="images/onecat.jpg" alt="a cat image" width="">
+  </section>
+  <section>
+    <h2>Cat Lists</h2>
+    <h3>Things cats love:</h3>
+    <ul>
+      <li>catnip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+      <figure>
+        <img src="images/lasagna.jpg" alt="lasagna">
+        <figcaption>Cats love lasagna</figcaption>
+      </figure>
+    </ul>
+    <h3>Top 3 things cats hate:</h3>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+    <figure>
+      <img src="images/threecats.jpg" alt="three cats" >
+      <figcaption>Cats hate other cats.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Cat Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+      <legend>Is your cat an indoor or outdoor cat?</legend>
+      <input type="radio" id="indoor" name="catlocation"><label for="indoor">Indoor</label>
+      <input type="radio" id="outdoor" name="catlocation" ><label for="outdoor">Outdoor</label>
+      </fieldset>
+      <fieldset>
+        <legend>What's your cat's personality?</legend>
+        <input type="checkbox" id="loving"><label for="loving">Loving</label>
+        <input type="checkbox" id="lazy"><label for="lazy">Lazy</label>
+        <input type="checkbox" id="energetic">
+        <label for="energetic">Energetic</label>
+      </fieldset>  
+    </form>
+    <input type="text" placeholder="cat photo URL">
+    <input type="submit">
+  </section>
+ <footer>
+  <p>No Copyright - <a href="#">freeCodeCamp</a></p>
+ </footer>
+</body>
+</html>
