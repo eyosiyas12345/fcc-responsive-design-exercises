@@ -1,0 +1,48 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-image:url(vintage-textured-background-0410-5699369.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+h1{
+  text-align: center;
+  font-family:sans-serif;
+  margin:5% auto;
+}
+
+.marker{
+  width:200px;
+  height:25px;
+  margin:1% auto;
+}
+.red{
+  background:linear-gradient(180deg,rgb(145, 37, 37), rgb(255, 0, 34) 50%,rgb(202, 53, 53));
+  box-shadow: 0 0 20px 0 rgb(83, 14, 14,0.8);
+}
+.green{
+  background: linear-gradient(180deg,green,rgb(0,255,0),green);
+  box-shadow: 0 0 20px 0 rgb(14, 82, 14,0.8);
+
+}
+.blue{
+  background:linear-gradient(blue,rgb(0, 132, 255),blue);
+  box-shadow: 0 0 20px 0 rgb(23, 23, 83,0.8);
+}
+.cap{
+  width:60px;
+  height:25px
+}
+.sleeve{
+  width:110px;
+  height:25px;
+  background-color: rgba(255,255,255,0.5);
+  border-left: 10px double rgb(0,0,0,0.7);
+}
+.cap, .sleeve{
+  display:inline-block;
+}
