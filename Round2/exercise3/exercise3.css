@@ -12,13 +12,13 @@ body{
   margin: 2rem auto;
   padding: 0 7px;
 }
-header h1, .calories-info .bold{
+header h1, .calories-info .big{
   font-size: 2em;
   font-weight:800;
   letter-spacing:0.5px;
 }
 p{
-  margin: 2px 0;
+  margin: 1px 0;
   display:flex;
   justify-content: space-between;
 }
@@ -29,12 +29,34 @@ p{
   height:10px;
   background-color: black;
 }
+.medium{
+  height: 5px;
+  background-color: black;
+}
 .bold{
   font-weight: 800;
+}
+.small-text{
+  font-size:0.8rem;
 }
 .calories-info{
   display:flex;
   justify-content: space-between;
   align-items:flex-end;
+  font-weight:800;
 }
-.
+.daily-value p:not(.no-divider){
+ border-bottom: 1px solid black;
+}
+.big{
+  justify-content: flex-end;
+}
+.indent{
+  margin-left: 1em;
+}
+.double-indent{
+  margin-left:2rem;
+}
+.note{
+  margin: 3px -3px
+}
