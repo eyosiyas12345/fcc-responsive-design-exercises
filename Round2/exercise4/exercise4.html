@@ -23,19 +23,22 @@
   <main>
     <form action="" method="post">
 
-    <section class="student-info">
+    <section class="student-info" role="region" aria-labelledby="student-information">
       <h2>Student Info</h2>
-      <div class="info"><label for="name">
-        Name: <input type="text">
-      </label>
+      <div class="info">
+        <label for="name">
+        Name: <input type="text" name="name" id="name">
+        </label>
       </div>
-      <div class="info"><label for="email">
-        Email: <input type="email">
-      </label>
+      <div class="info">
+        <label for="email" >
+        Email: <input type="email" name="email" id="email">
+        </label>
       </div>
-      <div class="info"><label for="">
-        Date of Birth: <input type="date">
-      </label>
+      <div class="info">
+        <label for="date">
+        Date of Birth: <input type="date" name="birth-date" id="date">
+        </label>
       </div>
     </section >
 
@@ -43,34 +46,39 @@
       <h2>HTML</h2>
       <fieldset>
         <legend>The legend element repersent a caption for the content of its parent fieldset element</legend>
-        <label for="q1-a1"><input type="radio" name="q1"> True</label>
-        <label for="q1-a2"><input type="radio" name="q1"> False</label>
+        <label for="q1-a1"><input type="radio" name="q1" id="q1-a1">
+           True</label>
+        <label for="q1-a2"><input type="radio" name="q1" id="q1-a2"> 
+          False</label>
       </fieldset>
       <fieldset>
         <legend>A label element nesting an input element is required to have a for attribiute with the same value as the input's id</legend>
-        <label for="q2-a1"><input type="radio" name="q2"> True</label>
-        <label for="q2-a2"><input type="radio" name="q2"> False</label>
+        <label for="q2-a1"><input type="radio" name="q2" class="q2-a1"> True</label>
+        <label for="q2-a2"><input type="radio" name="q2" class="q2-a2"> False</label>
       </fieldset>
      </section >
 
  <section class="css-section">
   <h2>CSS</h2>
   <div class="css-question">
-   <label for="select-input">Can the  CSS margin property accept negative values?</label>
+   <label for="select-input">
+    Can the  CSS margin property accept negative values?
+   </label>
   </div>
   <div class="css-answer">
    <select name="yes-no" id="yes-no">
     <option value="">Select an option</option>
     <option value="yes" name="yes">Yes</option>
     <option value="no" name="no">No</option>
-  </select>
   </div>
- <div class="css-question">Do you have any question? </div>
- <div class="css-answer">
- <textarea name="textarea" id="textarea"></textarea>
+    <div class="css-question">Do you have any question? </div>
+    <div class="css-answer">
+    <textarea name="textarea" id="textarea"></textarea>
  </div>
  </section>
+
   <button type="submit">Send</button>
+
     </form>
   </main>
   <footer>
