@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  background-color: #f4f8fc;
+}
+header{
+ display:flex;
+ background-color: #1b1b32;
+ color: white;
+ justify-content: space-between;
+ align-items:center;
+ padding-right: 32px;
+}
+img{
+  width: 150px;
+  aspect-ratio: 34/9;
+  object-fit: cover;
+}
+.title{
+  color: #f1be32;
+}
+.logo{
+  display:inline-block;
+  justify-content:flex-start;
+}
+h1{
+  font-size: 16px;
+}
+nav{
+  text-align: right;
+}
+ul{
+  display:flex;
+  list-style: none;
+  justify-content: flex-end;
+  width: 200px;
+  flex-wrap: no-wrap;
+}
+ul> li{
+  margin-left: 32px;
+}
+ul > li> a{
+  color: white;
+  text-decoration: none;
+  transition:ease-in-out, .4s;
+}
+nav ul > li a:hover{
+ color: #1b1b32;
+ background-color: #f5f6f7;
+}
+form{
+  margin: 5% auto;
+  max-width: 500px;
+  padding: 0 1rem;
+}
+form section{
+  text-indent: 1rem;
+}
+form section fieldset{
+  border: none;
+}
+form section fieldset label{
+  display: block;
+}
+ legend{
+  margin: 1rem auto;
+}
+ label{
+  margin: 0.5rem auto;
+ }
+h2{
+  margin: 2rem 0;
+  text-indent: unset;
+  border-bottom: 3px solid rgba(124, 124, 124, 0.3);
+}
+.info-container{
+  margin: auto;
+
+}
+.info{
+  margin: 1rem auto;
+}
+.html-questions .q1, .q2{
+  display: inline-block;
+}
+h3{
+  font-size: 1rem;
+  margin: 1rem auto;
+}
+.css-answer{
+  margin-bottom: 1rem;
+}
+button[type="submit"]{
+  width: 60%;
+  height: 50px;
+  font-size: 1rem;
+  display: block;
+  justify-self: center;
+  border: 2px solid #000;
+  background-color: #cacaca;
+}
+button[type="submit"]{
+
+}
+
+footer{
+  text-align: center;
+  background-color: #1a1a3f;
+  color:#fff;
+  padding: 0.5rem 0;
+}
+footer a{
+  color: #fff;
+}
+
+@media only screen and (max-width: 400px)  {
+  nav > ul{
+    flex-wrap: wrap;
+  }
+  .title{
+    text-align: center
+  }
+}
