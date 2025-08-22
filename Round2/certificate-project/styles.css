@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Helvetica, sans-serif;
+}
+#main{
+  background-color:rgb(241, 241, 240);
+  margin:2rem 0.5rem;
+  padding:1rem ; 
+  border-radius: 5px;
+}
+#title{
+  font-size: 2.5rem;
+  margin-top:1rem;
+}
+#img-div{
+  background-color: #fff;
+  padding: 1rem 0; 
+  width: 100%;
+}
+#image{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+#img-caption{
+ text-align: center;
+ margin: 1rem;
+}
+p{
+   margin: 1rem 0;
+}
+p, #img-caption{
+   color: #414141;
+}
+h1, h2,p {
+  text-align: center;
+}
+#tribute-info h2{
+  font-size: 1.2rem;
+  margin: 3rem 2rem
+}
+#tribute-info ul, #proverb{
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+ul p{
+ text-align: unset;
+ margin-bottom: 1.5rem;
+}
+ul li:last-of-type{
+  margin-bottom: 4rem;
+}
+p span{
+  font-weight: bold;
+}
+
+#last-p{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#proverb{
+  max-width: 550px;
+  margin: 0 auto;
+  font-style:italic;
+}
+#tribute-link{
+  color: rgb(99, 163, 225);
+}
