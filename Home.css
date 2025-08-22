@@ -17,12 +17,12 @@ nav{
 .logo{
   
 }
-.links{
+ul{
  display:flex;
  justify-content:space-between;
  width: 30%;
 }
-.links a{
+ a{
   color:white;
   text-decoration:none;
 }
