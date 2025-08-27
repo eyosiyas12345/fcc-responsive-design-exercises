@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 0.95rem;
 }
 main{
@@ -15,6 +15,7 @@ main{
  flex-direction: column-reverse;
  line-height: 1.5;
  margin: 1rem ;
+ text-align: center;
 }
 .title span:first-of-type{
  font-size: 1rem;
@@ -39,17 +40,17 @@ left: 0;
 .year:last-child{
   margin-right: .5rem;
 }
-#table-wrapper{
-}
+
 table{
   margin: 1rem;
+  border-collapse:collapse;
 }
 table caption{
   font-size: 1rem;
   color: #047094;
   text-align: left;
 }
-.sr-only{
+span[class~="sr-only"]{
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
   overflow:hidden;
@@ -61,6 +62,7 @@ table caption{
   margin: 1rem 0;
   font-style: italic;
   font-size: 0.8rem;
+  margin-right: -200px;
 }
 
 table tbody th{
@@ -79,4 +81,11 @@ table tbody td{
 table tbody tr:last-of-type{
   border-bottom: 3px double #000;
   width: 100%;
+}
+table tr{
+  padding-left: 1rem;
+}
+
+tr.data{
+  background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
 }
