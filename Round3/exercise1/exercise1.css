@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+main{
+  margin: 0 auto;
+  border: 1px solid #c7c3c3;
+  max-width: 500px;
+}
+.title{
+ display: flex;
+ flex-direction: column-reverse;
+ line-height: 1.5;
+ margin: 1rem ;
+}
+.title span:first-of-type{
+ font-size: 1rem;
+}
+.title span:last-of-type{
+  font-size: 1.5rem;
+}
+.years{
+display: flex;
+gap: 2rem;
+background-color: #0a0a23;
+color: #fff;
+font-weight: 700;
+font-size: 0.8rem;
+justify-content: flex-end;
+padding: 0.5rem;
+position: sticky;
+top: 0;
+left: 0;
+}
+
+.year:last-child{
+  margin-right: .5rem;
+}
+#table-wrapper{
+}
+table{
+  margin: 1rem;
+}
+table caption{
+  font-size: 1rem;
+  color: #047094;
+  text-align: left;
+}
+.sr-only{
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow:hidden;
+}
+.description{
+  font-weight: normal;
+  display: block;
+  text-align: left;
+  margin: 1rem 0;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+table tbody th{
+  text-align: left;
+  width: 100%;
+  width: 65%;
+}
+table tbody td{
+  color: #000;
+  margin: 0 2rem;
+  text-align: right;
+  vertical-align: top;
+  width: 30%;
+  padding: 0 0.6rem;
+}
+table tbody tr:last-of-type{
+  border-bottom: 3px double #000;
+  width: 100%;
+}
