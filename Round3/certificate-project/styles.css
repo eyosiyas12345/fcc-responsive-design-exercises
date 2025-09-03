@@ -86,9 +86,10 @@ code{
     float: left;
     border-right: 3px solid gray;
     height: 100vh;
+    overflow: auto;
   }
   nav ul{
-    height: calc(100%-1rem);
+    height: 100%;
     border: none;
   }
   #main-doc{
