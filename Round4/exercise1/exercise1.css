@@ -1,0 +1,77 @@
+:root{
+  --building-color1: #eb8aeb;
+  --building-color2: #8a2be2;
+  --building-color3: #4b0082;
+  --building-color4: #7fffd4;
+  --window-color1: #ffff00;
+  --window-color2: #ffa500;
+  --window-color3: #ff0000;
+  --window-color4: #00ff00;
+}
+*{
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.background-buildings, .foreground-buildings{
+  width: 100%;
+  height: 70%;  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.bb1{
+  height: 100%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bb1a{
+  height: 15%;
+  width: 70%;
+}
+.bb1b{
+  height: 13%;
+  width: 80%;
+}
+.bb1c{
+  height: 13%;
+  width: 90%;
+}
+.bb1d{
+  height: 100%;
+  width: 100%;
+}
+
+.bb2{
+  height: 70%;
+  width: 15%;
+}
+.bb2a{
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  border-bottom: 20px solid green;
+}
+.bb2b{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, green 30%, lightgreen 70%)
+}
+.bb3{
+  width: 10%;
+  height: 80%;
+}
+.bb4{
+  width: 10%;
+  height: 85%;
+}
