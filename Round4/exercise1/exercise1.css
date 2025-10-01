@@ -58,9 +58,9 @@ body{
   width: 15%;
 }
 .bb2a{
-  border-right: 100px solid transparent;
-  border-left: 100px solid transparent;
-  border-bottom: 20px solid green;
+  border-right: 40px solid transparent;
+  border-left:  40px solid transparent;
+  border-bottom: 40px solid green;
 }
 .bb2b{
   width: 100%;
