@@ -1,11 +1,14 @@
 :root{
-  --sky-color: #d0f0ff;
+  --sun-color: #ffcf33;
+  --sun-intense-glow-color:#ffcf33;
+  --sun-less-intense-glow-color:#ffff66;
+  --sky-color: #bbeeff;
   --sun-color: rgb(255, 208, 0);
   --building-color1: #b376ec;
   --building-color2: #92c090;
   --building-color3: #c45d6e;
   --building-color4: #516f9b;
-  --window-color1: rgb(187, 147, 233);
+  --window-color1: #bb93e9;
   --window-color2: #c5e0c4;
   --window-color3: #db8a8a;
   --window-color4: #96a9c0;
@@ -22,32 +25,16 @@ body{
   overflow: hidden;
   display: flex;
   align-items: flex-end;
-  background-color: var(--sky-color);
 }
-.sun{
-  width: 20%;
-  height: 25%;
-  background-color: var(--sun-color);
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  border-radius: 50%;
-  border: none;
-}
-.sun-radiation{
-  position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 30%;
-  height: 50%;
+.sky{
+
   background: radial-gradient(
-    circle,
-    rgb(240, 231, 108) 0%,
-  rgba(248, 248, 107, 0.658) 30%,
-  var(--sky-color) 50%,
-  var(--sky-color) 100%
+    closest-corner circle at 15% 15%,
+    var(--sun-color),
+    var(--sun-intense-glow-color) 20%,
+    var(--sun-less-intense-glow-color) 21%,
+    var(--sky-color) 100%
     );
-  border-radius: 50%;
 }
 #background-buildings, #foreground-buildings{
   width: 100%;
@@ -58,6 +45,7 @@ body{
   position: absolute;
   bottom: 0;
 }
+/* bb stands for background building */
 .bb1{
   height: 100%;
   width: 10%;
@@ -68,13 +56,12 @@ body{
 .bb1a{
   height: 15%;
   width: 70%;
-  background: linear-gradient(var(--building-color1), rgb(187, 147, 233) 95%);
+  background: linear-gradient(var(--building-color1), var(--window-color1) 95%);
 }
 .bb1b{
   height: 13%;
   width: 80%;
-
-  background: linear-gradient(var(--building-color1), rgb(187, 147, 233) 95%);
+  background: linear-gradient(var(--building-color1), var(--window-color1) 95%);
 }
 .bb1c{
   height: 13%;
@@ -139,15 +126,14 @@ body{
  background: repeating-linear-gradient(
   90deg,
   var(--building-color4) 0%,
-  var(--building-color4) 4%,
-  var(--window-color4) 4%,
-  var(--window-color4) 20%,
-  var(--building-color4) 20%,
-  var(--building-color4) 24%
+  var(--building-color4) 8%,
+  var(--window-color4) 8%,
+  var(--window-color4) 23%
    );
     border-top: 1vw solid var(--building-color4);
     border-bottom: 5vw solid var(--building-color4)
 }
+/* fb stands for foreground building */
 .fb1{
   width: 10%;
   height: 80%;
@@ -308,3 +294,21 @@ body{
   position: relative;
   left: -5%;
 }
+
+/* the media query is for night mode */
+@media screen and (max-width: 1000px ){
+  :root{
+    --sun-color: #eeeeee;
+    --sun-intense-glow-color:#eeeeee;
+    --sun-less-intense-glow-color:#777;
+    --sky-color: #2d3642;;
+    --building-color1: #000;
+    --building-color2: #000;
+    --building-color3: #000;
+    --building-color4: #000;
+    --window-color1:#a7a2a2 ;
+    --window-color2: #a7a2a2;
+    --window-color3: #a7a2a2;
+    --window-color4: #a7a2a2;
+  }
+}  
