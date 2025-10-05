@@ -154,4 +154,39 @@ hr{
 }
 
 
-@media screen and (max-width:)
+@media screen and (max-width: 950px){
+  h1{
+    font-size: 2rem;
+  }
+  body{
+    background-color:green;
+  }
+  main{
+  grid-template-columns: repeat (2, 1fr);
+  grid-template-areas: 
+  "contact contact "
+  "paragraph paragraph "
+  "history image "
+  ;
+}
+hr{
+  display: none;
+}
+.paragraphes{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+@media screen and (min-width=550px){
+  .logo h1{
+    font-size: 1.5rem;
+  }
+  main{
+display: flex;
+flex-direction: column;
+  }
+ .paragraphes{
+    display: flex;
+    flex-direction: column;
+}
+}
