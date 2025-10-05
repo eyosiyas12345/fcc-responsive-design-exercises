@@ -92,11 +92,14 @@ body{
 @keyframes box-move {
   from{
  transform: rotate(0deg);
- background-color: yellow;
+ background-color: orange
+}
+50%{
+    background-color: yellow;
   }
   to{
   transform: rotate(-360deg);
-  background-color: red;
+  background-color: orange;
   }
 }
 @keyframes wheel-move{
