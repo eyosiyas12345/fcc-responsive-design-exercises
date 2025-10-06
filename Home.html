@@ -3,34 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FCC-ResponsiveDesignCourse</title>
+  <title>Eyosiyas Portfolio Webpage</title>
   <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
 </head>
 <body>
-    <header class="logo">
-      <h1>My Restaurant</h1>
-    </header>
-    <nav class="nav">
-      <ul>
-        <li>home</li>
-        <li>menu</li>
-        <li>about</li>
-        <li>contact</li>
-      </ul>
-    </nav>
-    <section class="paragraphs">
-      <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam aliquid minus excepturi eius sit ipsam accusamus culpa totam dicta!</p>
-            <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam aliquid minus excepturi eius sit ipsam accusamus culpa totam dicta!</p>
-      <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam aliquid minus excepturi eius sit ipsam accusamus culpa totam dicta!</p>
-            <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam aliquid minus excepturi eius sit ipsam accusamus culpa totam dicta!</p>      <p class="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam aliquid minus excepturi eius sit ipsam accusamus culpa totam dicta!</p>      <p class="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam aliquid minus excepturi eius sit ipsam accusamus culpa totam dicta!</p>
-    </section>
-    <div class="hist">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, iste.
+  <nav id="navbar">
+    <a href="#welcome-section">About</a>
+    <a href="#projects">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="welcome-section">
+    <h1>Hey I am Eyosiyas</h1>
+    <p>a Frontend developer</p>
+  </section>
+
+  <section id="projects">
+    <h2>These are some of my projects</h2>
+
+    <div id="project-pictures">
+      <a href="#">
+    <figure>
+      <img src="images/round5 certificate project img1.jpg" alt="first project">
+      <figcaption class="project-tile">Tribute page</figcaption>
+    </figure>
+    </a>
+    <a href="#">
+    <figure>
+      <img src="images/round5 certificate project img2.png" alt="2nd project">
+      <figcaption class="project-tile">Random Quote Machine</figcaption>
+    </figure>
+    </a>
+    <a href="">
+    <figure>
+      <img src="images/round5 certificate project img3.png" alt="3rd project">
+      <figcaption class="project-tile">Javascript Calculator</figcaption>
+    </figure>
+    </a>
+    <a href="">
+    <figure>
+      <img src="images/round5 certificate project img4.jpg" alt="4th project">
+      <figcaption class="project-tile">Map data across the glob</figcaption>
+    </figure>
+    </a>
+    <a href="">
+    <figure>
+      <img src="images/round5 certificate project img5.png" alt="5th project">
+      <figcaption class="project-tile">Wikipedia Viewer</figcaption>
+    </figure> 
+    </a>   
+    <a href="">
+    <figure>
+      <img src="images/round5 certificate project img6.png" alt="6th project">
+      <figcaption class="project-tile">Tic Tac Toe Game</figcaption>
+    </figure>
+    </a>
     </div>
-    <div class="images">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+    <button id="button-showall">Show All</button>
+  </section>
+
+  <section id="contact">
+    <h2>Let's Work Together...</h2>
+    <p>How do you take your coffee?</p>
+    <div class="medias">
+    <a class="media"><i></i>Facebook</a>
+    <a id="profile-link" class="media" href="#" target="_blank"><i></i>Github</a>
+    <a class="media" href="#"><i></i>Twitter</a>
+    <a class="media" href="#"><i></i>Send a mail</a>
+    <a class="media" href="#"><i></i>Call me</a>
     </div>
+    <hr>  
+    <div class="footer">
+    <p >**This is portfolio prepared by Eyosiyas Gezahegn (me). This shows all the exercises I have built through taking the responsive desing course.</p>
+    <p >&copy;Created for freecodecamp <i></i></p>
+    </div>
+  </section>
 </body>
 </html>
