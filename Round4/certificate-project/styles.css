@@ -88,6 +88,8 @@ p{
 }
 .icon{
   display: none;
+  margin-right: 2rem;
+  font-size: 3vw;
 }
 
 .feature-text{
